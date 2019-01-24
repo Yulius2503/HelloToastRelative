@@ -23,17 +23,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39" />
+        app:layout_constraintVertical_bias="0.39"
+        android:onClick="showToast"
+         />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/show_count"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="Button"
+        android:text="@string/button_label_count"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="counterUp"
+        />
+
 
     <TextView
         android:id="@+id/textView"
@@ -52,7 +57,7 @@
         android:textColor="@android:color/holo_blue_light"
         android:textSize="160sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/show_count"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_toast" />
